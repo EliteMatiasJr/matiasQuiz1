@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matias.matiasquiz1.MainActivity">
+
+    <TextView
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Android Versions"/>
+
+    <ListView
+        android:id="@+id/lvVersions"
+        android:layout_width="wrap_content"
+        android:layout_height="370dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_below="@id/lvVersions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:onClick="homeButton"
+            android:text="Home"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnPage1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnHome"
+            android:onClick="page1Button"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnPage2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnPage1"
+            android:onClick="page2Button"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnPage3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnPage2"
+            android:onClick="page3Button"
+            android:text="3" />
+
+    </LinearLayout>
+
+</RelativeLayout>

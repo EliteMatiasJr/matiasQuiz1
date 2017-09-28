@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">matiasQuiz1</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="AndroidVersions">
+        <item>Lollipop</item>
+        <item>Marshmallow</item>
+        <item>Nougat</item>
+    </string-array>
+</resources>
